@@ -1,5 +1,6 @@
 // use this to decode a token and get the user's information out of it
 import decode from 'jwt-decode';
+const Auth = require("./auth");
 
 // create a new class to instantiate for a user
 class AuthService {
@@ -46,4 +47,7 @@ class AuthService {
   }
 }
 
-export default new AuthService();
+// export default new AuthService();
+
+
+export default Auth;
